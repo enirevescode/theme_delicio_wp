@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/*!
+Theme Name: pizzasass
+Theme URI: https://enirevescode.fr/
+Author: enireves
+Author URI: https://enirevescode.fr/
+Description: est 1 theme propriétaire pour 1 site de commande de pizza sur place ou à emporter
+Version: 1.0.0
+Text Domain: pizzasass
+*/
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+.btn {
+  background-color: #ff4757;
+  color: aliceblue;
+  font-weight: 500;
+  position: relative;
+  top: 10px;
+  float: right;
+  text-align: center;
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  float: right;
+  bottom: 30px;
+  /* Place the button at the bottom of the page */
+  right: 50px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #ff4757;
+  /* Set a background color */
+  color: aliceblue;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #e00013;
+}
+
+/*************************************************/
+/*                 C A R D                      */
+/***********************************************/
+/************************************************/
+/*                 SLIDE-HOME                   */
+/************************************************/
+.slide-home {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.carousel-item h5 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.carousel-item p {
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 10px 3%;
+}
+
+/* FOOTER */
+footer {
+  color: #273c75;
+}
+
+/***************************************************/
+/*==============       HEADER ++++++++++++         */
+/***************************************************/
+.jumboaccueil {
+  z-index: -10;
+  background-image: url("assets/salle2.jpg");
+  background-attachment: fixed;
+  /* background will not move with the elements*/
+  background-position: center;
+  max-width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+  top: 0px;
+}
+
+/***************************************************/
+/***********         category pizze         ********/
+/***************************************************/
+.pizze {
+  z-index: -10;
+  background-image: url("assets/fond_card.jpg");
+  background-attachment: fixed;
+  /* background will not move with the elements*/
+  background-position: center;
+  max-width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+  top: 0px;
+}
+
+/***************************************************/
+/***********        category dolce          ********/
+/***************************************************/
+.dolce {
+  z-index: -10;
+  background-image: url("assets/photo-panna-cotta2.jpg");
+  background-attachment: fixed;
+  /* background will not move with the elements*/
+  background-position: center;
+  max-width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+  top: 0px;
+}
+
+/***************************************************/
+/***********       category pasta           ********/
+/***************************************************/
+.pasta {
+  z-index: -10;
+  background-image: url("assets/spaghetti.jpg");
+  background-attachment: fixed;
+  /* background will not move with the elements*/
+  background-position: center;
+  max-width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+  top: 0px;
+}
+
+/***************************************************/
+/*             message d'accueil                   */
+/***************************************************/
+h1 {
+  color: #0a3d62;
+  text-align: center;
+  font-family: montserrat, monospace;
+  font-size: clamp(32px, 60%, 50px);
+}
+
+.entete {
+  font-family: montserrat, monospace;
+  margin-top: 20px;
+  color: aliceblue;
+  font-size: clamp(32px, 60%, 50px);
+  margin-top: clamp(50px, 50%, 60px);
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.1rem 0.1rem 0.3rem #0a3d62;
+}
+
+.entete2 {
+  margin-top: 20px;
+  color: aliceblue;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem 0.3rem #0a3d62;
+}
+
+body {
+  background-color: pink;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=style.css.map */
