@@ -68,11 +68,13 @@
  /***************************************************/
 /*             message d'accueil                   */
 /***************************************************/
-h1 {
+h1, h4 {
   color: $blue;
   text-align: center;
   font-family: montserrat, monospace;
-  font-size: clamp(32px, 60%, 50px);
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 0.1rem 0.1rem 0.3rem #{$white};
 }
 
 .entete {
@@ -83,7 +85,7 @@ h1 {
   margin-top: clamp(50px, 50%, 60px);
   text-align: center;
   font-style: italic;
-  text-shadow: 0.1rem 0.1rem 0.3rem #{$blue};
+  text-shadow: 0.1rem 0.1rem 0.4rem #{$blue};
 }
 
 .entete2 {
@@ -92,4 +94,14 @@ h1 {
   font-size: 3rem;
   text-align: center;
   text-shadow: 0.1rem 0.1rem 0.3rem #{$blue};
+}
+
+/***************************************************/
+/**********       carte.php et card        ********/
+/*************************************************/
+h6 {
+  font-weight: bolder;
+  font-style: oblique;
+  letter-spacing: 1px;
+  color: $red;
 }

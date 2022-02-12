@@ -10,7 +10,7 @@
 add_action( 'admin_menu', 'sgdelicio_remove_menu_pages' );
 
 //création d'1 constante pour la version. dans la fonction il ne faut pas //mettre les '' car c'est 1 constante !
-define('sgdelicio_version', '2.3');
+define('sgdelicio_version', '5.3');
 //chargement de scripts - dar 1 n. de fonction propre
 //chargement dans le front-end
 function sgdelicio_scripts()

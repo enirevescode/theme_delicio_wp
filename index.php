@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h2 class="slide-home" style="text-align:center">Bonne Visite !</h2>
+<h4 class="slide-home" style="text-align:center">Bonne Visite !</h4>
 <br>
 <br>
 <section class="slide-home">

@@ -60,9 +60,11 @@ td, th {
   color: aliceblue;
   font-weight: 500;
   position: relative;
-  top: 10px;
-  float: right;
+  bottom: 10px;
+  float: left;
   text-align: center;
+  top: 55px;
+  left: 30px;
 }
 
 #myBtn {
@@ -89,7 +91,7 @@ td, th {
   /* Add a mouse pointer on hover */
   padding: 15px;
   /* Some padding */
-  border-radius: 50%;
+  border-radius: 60%;
   /* Rounded corners */
   font-size: 18px;
   /* Increase font size */
@@ -102,6 +104,34 @@ td, th {
 /*************************************************/
 /*                 C A R D                      */
 /***********************************************/
+.card-text-prix {
+  float: right;
+  position: relative;
+  margin: 0 15px 10px 0;
+  font-weight: 700;
+  color: #ff4757;
+}
+
+.card-title, .card-text-prix, .card-text, .card-text-single {
+  font-size: 1.2rem;
+}
+
+.card-title {
+  font-weight: 700;
+  color: #ff4757;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-body {
+  padding: 0;
+  min-height: 230px;
+}
+
+.card {
+  top: 0;
+}
+
 /************************************************/
 /*                 SLIDE-HOME                   */
 /************************************************/
@@ -193,11 +223,13 @@ footer {
 /***************************************************/
 /*             message d'accueil                   */
 /***************************************************/
-h1 {
+h1, h4 {
   color: #0a3d62;
   text-align: center;
   font-family: montserrat, monospace;
-  font-size: clamp(32px, 60%, 50px);
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 0.1rem 0.1rem 0.3rem aliceblue;
 }
 
 .entete {
@@ -208,7 +240,7 @@ h1 {
   margin-top: clamp(50px, 50%, 60px);
   text-align: center;
   font-style: italic;
-  text-shadow: 0.1rem 0.1rem 0.3rem #0a3d62;
+  text-shadow: 0.1rem 0.1rem 0.4rem #0a3d62;
 }
 
 .entete2 {
@@ -219,8 +251,18 @@ h1 {
   text-shadow: 0.1rem 0.1rem 0.3rem #0a3d62;
 }
 
+/***************************************************/
+/**********       carte.php et card        ********/
+/*************************************************/
+h6 {
+  font-weight: bolder;
+  font-style: oblique;
+  letter-spacing: 1px;
+  color: #ff4757;
+}
+
 body {
-  background-color: pink;
+  background-color: white;
   overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */
