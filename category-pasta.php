@@ -8,7 +8,6 @@
 </div>
 <br>
 <!-- <article class="post"> -->
-
 <div class="container">
    <!-- <article class="post"> -->
    <?php if (have_posts()) : ?>

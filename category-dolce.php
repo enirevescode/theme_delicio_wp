@@ -37,7 +37,7 @@
   <p class="card-text-single mx-3 my-3"><?php echo get_post_meta(get_the_ID(), 'recette_dolce', true); ?></p>
   <p class="card-text-prix mt-4"><?php echo get_post_meta(get_the_ID(), 'prix_dolce', true); ?> €</p>
   <br>
-    <button type="button" class="btn btn-primary px-3" data-bs-dismiss="modal">Fermer</button>
+    <button type="button" class="btn" data-bs-dismiss="modal">Fermer</button>
   </div>
 </div>
    </div>

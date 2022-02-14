@@ -10,7 +10,7 @@
 add_action( 'admin_menu', 'sgdelicio_remove_menu_pages' );
 
 //création d'1 constante pour la version. dans la fonction il ne faut pas //mettre les '' car c'est 1 constante !
-define('sgdelicio_version', '5.3');
+define('sgdelicio_version', '5.6');
 //chargement de scripts - dar 1 n. de fonction propre
 //chargement dans le front-end
 function sgdelicio_scripts()
@@ -33,7 +33,7 @@ function sgdelicio_scripts()
 // }
 	 wp_enqueue_style(
 		'parent_style',
-		get_template_directory_uri() . './style.css',
+		get_template_directory_uri() . '/style.css',
 		array('sgdelicio_bootstrap-style'), sgdelicio_version, 'all');
 	// //lien avec js true pour qu'il aille dans le footer
 	//là où doit se situer le js

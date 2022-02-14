@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*!
-Theme Name: pizzasass
+Theme Name: deliciozo
 Theme URI: https://enirevescode.fr/
 Author: enireves
 Author URI: https://enirevescode.fr/
 Description: est 1 theme propriétaire pour 1 site de commande de pizza sur place ou à emporter
 Version: 1.0.0
-Text Domain: pizzasass
+Text Domain: deliciozo
 */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -63,8 +63,6 @@ td, th {
   bottom: 10px;
   float: left;
   text-align: center;
-  top: 55px;
-  left: 30px;
 }
 
 #myBtn {
@@ -113,7 +111,7 @@ td, th {
 }
 
 .card-title, .card-text-prix, .card-text, .card-text-single {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .card-title {
@@ -128,8 +126,8 @@ td, th {
   min-height: 230px;
 }
 
-.card {
-  top: 0;
+.card-text, .card-text-single {
+  margin-left: 20px;
 }
 
 /************************************************/
