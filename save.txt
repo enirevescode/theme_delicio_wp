@@ -1,0 +1,48 @@
+<?php get_template_part('header-dolce'); ?>
+<section class="titre">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+            <h1>La Carte des <?php single_cat_title('', true); ?></h1>
+         </div>
+      </div>
+   </div>
+   <br>
+   <br>
+</section>
+<!-- <article class="post"> -->
+<?php $args_produit = array(
+   'post_type' => 'post',
+   'posts_per_page' => 3
+);
+$req_produit = new WP_Query($args_produit); ?>
+<?php if ($req_produit->have_posts()) : ?>
+
+   <section class="article">
+      <div class="container">
+         <div class="row row-cols-3 row-cols-md-3 g-2">
+            <?php while ($req_produit->have_posts()) : $req_produit->the_post(); ?>
+               <div class="card">
+                  <div class="card-img-top">
+                     <?php the_post_thumbnail('medium') ?></div>
+                  <h3 style="text-align:center"><a href="<?php the_permalink(); ?>"><?php echo get_post_meta(get_the_ID(), 'dolce', true); ?></a></h3>
+                  <p class="card-text-single mx-5 my-3" style="font-size:2rem;"><?php echo get_post_meta(get_the_ID(), 'recette_dolce', true); ?></p>
+                  <div class="float-end">
+                     <p class="card-text-prix mb-5 me-5" style="font-size:3rem"><?php echo get_post_meta(get_the_ID(), 'prix_dolce', true); ?> €</p>
+                  </div>
+               </div>
+         </div>
+      </div>
+   <?php endwhile;
+            wp_reset_postdata(); ?>
+<?php endif; ?>
+   </section>
+   <div class="row">
+      <div class="col-xs-4">
+         <p>y a pas de résultat</p>
+      </div>
+   </div>
+   <br>
+   <br>
+   <!-- </article> -->
+   <?php get_footer(); ?>
